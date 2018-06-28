@@ -1,4 +1,3 @@
-
 function toggle(x) {
     var arr = ['one','two','three','four'];
     for (var i = 0; i < arr.length; i++){

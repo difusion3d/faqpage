@@ -1,0 +1,23 @@
+.author {
+    display:none;
+}
+body {
+    background-color:#ECECEC;
+}
+.firstdiv {
+    margin-top:30px;
+    text-align:center;
+}
+.seconddiv {
+    margin:0px;
+}
+.firstbutton {
+    color:black;
+}
+.thirddiv {
+    margin:20px;
+}
+.fourthdiv {
+    margin:0px;
+    background-color: white;
+}
