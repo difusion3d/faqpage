@@ -30,3 +30,31 @@ function togglec(x) {
     var x = document.getElementById(x);
     x.style.backgroundColor = "#B2DFDE";
 }
+$(document).ready(function(){
+    $(".thirddiv").hover(function(){
+        $(this).toggleClass("hover")
+    })
+    $("#menu").click(function(){
+        $("#menu2").fadeIn();
+        $("#menu").attr("style","display:none;");
+        $("#menu3").show();
+    })
+    $("#menu3").click(function(){
+        $("#menu2").fadeOut();
+        $("#menu3").attr("style","display:none;");
+        $("#menu").show();
+        
+    })
+    $(window).on('resize', function(){
+        if($(this).width() >= 1040){
+            $("#menu2").show();
+            $("#menu3").hide();
+            $("#menu").hide();
+        }
+        else {
+            $("#menu2").hide();
+            $("#menu").show();
+            $("#menu3").hide();
+        }
+     });
+})

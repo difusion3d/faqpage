@@ -2,7 +2,7 @@
     display:none;
 }
 body {
-    background-color:#ECECEC;
+    color:#ECECEC;
 }
 .firstdiv {
     margin-top:30px;
@@ -11,13 +11,37 @@ body {
 .seconddiv {
     margin:0px;
 }
-.firstbutton {
-    color:black;
-}
+
 .thirddiv {
     margin:20px;
 }
 .fourthdiv {
     margin:0px;
     background-color: white;
+}
+.hover{
+    background-color:GREY;
+    color:white;
+    border-radius:5px;
+}
+.fifthdiv {
+    display:none;
+}
+.sixthdiv {
+    display:none;
+}
+p {
+    font-size:12px;
+}
+
+@media only screen and (max-width: 1040px) {
+    p {
+        font-size: 20px;
+    }
+    .seconddiv {
+        display: none;
+    }
+    .fifthdiv {
+        display:inline;
+    }
 }
