@@ -20,7 +20,7 @@ body {
     background-color: white;
 }
 .hover{
-    background-color:GREY;
+    background-color:lightgrey;
     color:white;
     border-radius:5px;
 }
@@ -33,7 +33,6 @@ body {
 p {
     font-size:12px;
 }
-
 @media only screen and (max-width: 1040px) {
     p {
         font-size: 20px;

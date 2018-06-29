@@ -49,6 +49,7 @@ $(document).ready(function(){
     })
     $(window).on('resize', function(){
         if($(this).width() >= 1040){
+            $("#collapseOne").addClass('show');
             $("#menu2").show();
             $("#menu3").hide();
             $("#menu").hide();
