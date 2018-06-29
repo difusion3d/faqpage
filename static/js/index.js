@@ -35,6 +35,8 @@ $(document).ready(function(){
         $(this).toggleClass("hover")
     })
     $("#menu").click(function(){
+        $("#collapseOne").removeClass('show');
+        $("#one").removeClass('fa-thumbs-o-down').addClass("fa-thumbs-o-up")
         $("#menu2").fadeIn();
         $("#menu").attr("style","display:none;");
         $("#menu3").show();
