@@ -2,15 +2,15 @@ function toggle(x) {
     var arr = ['one','two','three','four'];
     for (var i = 0; i < arr.length; i++){
         if (x !== arr[i]){
-            document.getElementById(arr[i]).setAttribute("class","fa fa-thumbs-o-up");
+            document.getElementById(arr[i]).setAttribute("class","fa fa-arrow-down");
         }
     }
     var x = document.getElementById(x);
-    if (x.getAttribute("class") === "fa fa-thumbs-o-down"){
-        x.setAttribute("class","fa fa-thumbs-o-up");
+    if (x.getAttribute("class") === "fa fa-arrow-up"){
+        x.setAttribute("class","fa fa-arrow-down");
     }
     else {
-        x.setAttribute("class","fa fa-thumbs-o-down");
+        x.setAttribute("class","fa fa-arrow-up");
     }
 }
 function togglec(x) {
@@ -23,8 +23,8 @@ function togglec(x) {
         'thirtyfive','thirtysix',
     ];
     for (var i = 0; i < arr.length; i++){
-        if (document.getElementById(arr[i]).style.backgroundColor != "white"){
-            document.getElementById(arr[i]).style.backgroundColor = "white";
+        if (document.getElementById(arr[i]).style.backgroundColor != ""){
+            document.getElementById(arr[i]).style.backgroundColor = "";
         }
     }
     var x = document.getElementById(x);

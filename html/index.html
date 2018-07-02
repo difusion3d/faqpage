@@ -2,14 +2,67 @@
     <head>
         <title>FAQ Sheet</title>
         <author class = "author">Nick Kreissler</author>
-        <link rel="stylesheet" type = "text/css" href="../static/css/index.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
+        <style>​
+            
+            p {
+                color:black;
+                background-color:black;
+                font-size:12px;
+            }
+            p {
+                color:black;
+            }
+            body {
+                color:#ECECEC;
+            }
+            .firstdiv {
+                margin-top:30px;
+                text-align:center;
+            }
+            .seconddiv {
+                margin:0px;
+            }
+
+            .thirddiv {
+                margin:20px;
+            }
+            .fourthdiv {
+                margin:0px;
+                background-color: white;
+            }
+            .hover1 {
+                color:white;
+            }
+            .hover {
+                background-color:lightgrey;
+                color:white;
+                border-radius:5px;
+            }
+            .fifthdiv {
+                display:none;
+            }
+            .sixthdiv {
+                display:none;
+            }
+            
+            @media only screen and (max-width: 1040px) {
+                p {
+                    font-size: 12px;
+                }
+                .seconddiv {
+                    display: none;
+                }
+                .fifthdiv {
+                    display:inline;
+                }
+            }
         </style>
     </head>
     <body style = "background-color: #ECECEC">
-        <div>
+        <h3 style = "margin-left:20px;color:black;">FAQS. Help Resources Center</h3>
+        <div style = "height:100%;">
             <div class = "firstdiv container-fluid row">
                 <div id = "menu2" class = "seconddiv col-xl-4">
                     <div class="accordion" id="accordionExample">
@@ -17,38 +70,38 @@
                             <div  class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button style = "color:black;" onclick = "toggle('one')" class=" btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    General <i id = "one" class = "fa fa-thumbs-o-down"></i>
+                                    Mode d'emploi - Vidéo <i id = "one" class = "fa fa-arrow-up"></i>
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class = "thirddiv" onclick = "togglec('uno')" >
-                                        <div id = "uno"style = "background-color:#B2DFDE;width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Creer Un Compte</p></div>
+                                        <div id = "uno"style = "background-color:#65bb69;width:100%;"class = "btn"><p style="color:white;margin-bottom:0px;float:left;">1. Creer Un Compte</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('dos')">
-                                        <div id = "dos"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">2. Administrer mon profil</p></div>
+                                        <div id = "dos"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">2. Administrer mon profil</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('tres')">
-                                        <div id = "tres"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">3. Creer et gerer des groupes</p></div>
+                                        <div id = "tres"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">3. Creer et gerer des groupes</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('quatro')">
-                                        <div id = "quatro"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">4. Partager des taches associees au manuel</p></div>
+                                        <div id = "quatro"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">4. Partager des taches associees au manuel</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('cinco')">
-                                        <div id = "cinco"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">5. Gerer les qualifications</p></div>
+                                        <div id = "cinco"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">5. Gerer les qualifications</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('seis')">
-                                        <div id = "seis"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">6. Communication</p></div>
+                                        <div id = "seis"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">6. Communication</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('siete')">
-                                        <div id = "siete"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">7. Creer et gerer des listes de ressources</p></div>
+                                        <div id = "siete"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">7. Creer et gerer des listes de ressources</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('ocho')">
-                                        <div id = "ocho"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">8. Ajouter des ressources propres a une liste</p></div>
+                                        <div id = "ocho"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">8. Ajouter des ressources propres a une liste</p></div>
                                     </div>
                                     <div class = "thirddiv" onclick = "togglec('nueve')">
-                                        <div id = "nueve"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">9. Partager des listes de resources</p></div>
+                                        <div id = "nueve"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">9. Partager des listes de resources</p></div>
                                     </div>
                                 </div>
                             </div>
@@ -57,39 +110,15 @@
                             <div  class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button style = "color:black;" onclick = "toggle('two')" class=" btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Class Tools <i id = "two" class = "fa fa-thumbs-o-up"></i>
+                                    Mode d'emploi - PDF <i id = "two" class = "fa fa-arrow-down"></i>
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class = "thirddiv"onclick = "togglec('ten')" >
-                                        <div id = "ten"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Creer Un Compte</p></div>
+                                        <div id = "ten"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Télécharger le mode d'emploi Espace langues en PDF</p></div>
                                     </div>
-                                    <div class = "thirddiv"onclick = "togglec('eleven')">
-                                        <div id = "eleven"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">2. Administrer mon profil</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twelve')">
-                                        <div id = "twelve"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">3. Creer et gerer des groupes</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirteen')">
-                                        <div id = "thirteen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">4. Partager des taches associees au manuel</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('fourteen')">
-                                        <div id = "fourteen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">5. Gerer les qualifications</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('fifteen')">
-                                        <div id = "fifteen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">6. Communication</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('sixteen')">
-                                        <div id = "sixteen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">7. Creer et gerer des listes de ressources</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('seventeen')">
-                                        <div id = "seventeen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">8. Ajouter des ressources propres a une liste</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('eighteen')">
-                                        <div id = "eighteen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">9. Partager des listes de resources</p></div>
-                                    </div>                                
                                 </div>
                             </div>
                         </div>
@@ -97,104 +126,178 @@
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
                                     <button style = "color:black;" onclick = "toggle('three')" class=" btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Category 3 <i id = "three" class = "fa fa-thumbs-o-up"></i>
+                                    D'autres doutes ? <i id = "three" class = "fa fa-arrow-down"></i>
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class = "thirddiv"onclick = "togglec('nineteen')" >
-                                        <div id = "nineteen"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Creer Un Compte</p></div>
+                                        <div id = "nineteen"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Contacter le KNE</p></div>
                                     </div>
-                                    <div class = "thirddiv"onclick = "togglec('twenty')">
-                                        <div id = "twenty"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">2. Administrer mon profil</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentyone')">
-                                        <div id = "twentyone"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">3. Creer et gerer des groupes</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentytwo')">
-                                        <div id = "twentytwo"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">4. Partager des taches associees au manuel</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentythree')">
-                                        <div id = "twentythree"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">5. Gerer les qualifications</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentyfour')">
-                                        <div id = "twentyfour"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">6. Communication</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentyfive')">
-                                        <div id = "twentyfive"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">7. Creer et gerer des listes de ressources</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentysix')">
-                                        <div id = "twentysix"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">8. Ajouter des ressources propres a une liste</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentyseven')">
-                                        <div id = "twentyseven"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">9. Partager des listes de resources</p></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
-                                    <button style = "color:black;" onclick = "toggle('four')" class=" btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Category 4 <i id = "four" class = "fa fa-thumbs-o-up"></i>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <div class = "thirddiv"onclick = "togglec('twentyeight')" >
-                                        <div id = "twentyeight"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Creer Un Compte</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('twentynine')">
-                                        <div id = "twentynine"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">2. Administrer mon profil</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirty')">
-                                        <div id = "thirty"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">3. Creer et gerer des groupes</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirtyone')">
-                                        <div id = "thirtyone"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">4. Partager des taches associees au manuel</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirtytwo')">
-                                        <div id = "thirtytwo"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">5. Gerer les qualifications</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirtythree')">
-                                        <div id = "thirtythree"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">6. Communication</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirtyfour')">
-                                        <div id = "thirtyfour"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">7. Creer et gerer des listes de ressources</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirtyfive')">
-                                        <div id = "thirtyfive"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">8. Ajouter des ressources propres a une liste</p></div>
-                                    </div>
-                                    <div class = "thirddiv"onclick = "togglec('thirtysix')">
-                                        <div id = "thirtysix"style = ";width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">9. Partager des listes de resources</p></div>
-                                    </div>                               
                                 </div>
                             </div>
                         </div>
                     </div>             
                 </div>
-                <div class = "col-xl-8">
-                    <div class = "fourthdiv card">
-                        <div id = "menu" class = "fifthdiv">
-                            <div style = "margin-top:10px;margin-left:10px;float:left;" class = "fa fa-2x fa-bars"></div>
-                        </div>
-                        <div id = "menu3"class = "sixthdiv">
-                            <div  style = "margin-top:10px;margin-left:10px;float:left;" class = "fa fa-2x fa-bars"></div>
-                        </div>
-                        <div>Hello world</div>
+                <div style = "margin-bottom:30px;"class = "col-xl-8">
+                    <div id = "menu" class = "fifthdiv">
+                        <div style = "margin-top:10px;margin-bottom:10px;color:black;margin-left:10px;float:left;" class = "fa fa-2x fa-bars"></div>
+                    </div>
+                    <div id = "menu3"class = "sixthdiv">
+                        <div  style = "margin-top:10px;margin-bottom:10px;margin-left:10px;float:left;color:black;" class = "fa fa-2x fa-bars"></div>
+                    </div>
+                    <div style = "padding:5vh;" class = "container-fluid fourthdiv card">
+                        <div id = "info"><iframe width='100%' height='60%'src='https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4' frameborder='0' allow='autoplay; encrypted-media'></iframe></div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer style = "position:fixed;margin-top:50px;background-color:#65bb69;width:100%;height:7%;bottom:0px;">
+
+        </footer>
         <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-        <script src="../static/js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.1.0.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script>
+            var content = [
+                    '<iframe width="100%" height="60%" src="https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/QmUabjqlYH8" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/KZqKufsGEpQ" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/cWsbcg5J-2k" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/qy0cdB7hu6Q" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/1r6eess3bFk" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/yzXDXZhzWic" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/ct8awQ-C8uI" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/yoW5GPYmp0U" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                    '<div style = "margin-left:0px;"><iframe style = "border:0px;" width = "100%" height = "65%" src="faq.html"></iframe></div>'
+                ];
+            function toggle(x) {
+                var arr = ['one','two','three','four'];
+                for (var i = 0; i < arr.length; i++){
+                    if (x !== arr[i]){
+                        if (document.getElementById(arr[i])){
+                            document.getElementById(arr[i]).setAttribute("class","fa fa-arrow-down");
+                        }
+                    }
+                }
+                var x = document.getElementById(x);
+                if (x.getAttribute("class") === "fa fa-arrow-up"){
+                    x.setAttribute("class","fa fa-arrow-down");
+                }
+                else {
+                    x.setAttribute("class","fa fa-arrow-up");
+                }
+            }
+            function togglec(x) {
+                var arr = [
+                    'uno','dos','tres','quatro','cinco','seis','siete','ocho','nueve','ten',
+                    'eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen',
+                    'eighteen','nineteen','twenty','twentyone','twentytwo','twentythree',
+                    'twentyfour','twentyfive','twentysix','twentyseven','twentyeight',
+                    'twentynine','thirty','thirtyone','thirtytwo','thirtythree','thirtyfour',
+                    'thirtyfive','thirtysix',
+                ];
+                
+                for (var i = 0; i < arr.length; i++){
+                    if (document.getElementById(arr[i])){
+                        if (document.getElementById(arr[i]).style.backgroundColor != ""){
+                            document.getElementById(arr[i]).style.backgroundColor = "";
+                            document.getElementById(arr[i]).firstChild.style.color = "black"
+
+                        }
+                    }
+                }
+                var c = x;
+                var x = document.getElementById(x);
+                var y = document.getElementById("info");
+                
+                var z = 0
+                for(var i = 0; i < content.length-1; i++){
+                    if (document.getElementById(arr[i]) === x) break;
+                    z++
+                }
+
+                console.log(z)
+                console.log(content[z])
+                y.innerHTML = content[z]
+                x.style.backgroundColor = "#65bb69";
+                x.firstChild.style.color = "white"
+
+                if ($(window).width() <= 1040){
+                    $("#menu2").slideUp();
+                    $("#menu3").attr("style","display:none;");
+                    $("#menu").show();
+                }
+            }
+            $(document).ready(function(){
+                $(".thirddiv").hover(function(){
+                    $(this).toggleClass("hover");
+                    $(this).children().children().toggleClass("hover1");
+
+                })
+                $("#menu").click(function(){
+                    $("#collapseOne").removeClass('show');
+                    $("#one").removeClass('fa-arrow-up').addClass("fa-arrow-down")
+                    $("#menu2").slideDown();
+                    $("#menu").attr("style","display:none;");
+                    $("#menu3").show();
+                })
+                $("#menu3").click(function(){
+                    $("#menu2").slideUp();
+                    $("#menu3").attr("style","display:none;");
+                    $("#menu").show();
+                    
+                })
+                $(window).on('resize', function(){
+                    var p = 0;
+                    if($(this).width() >= 1040){
+                        for (var i = 0; i < 111; i++){
+                            p = i;
+                            if (content[i] == $("#info").html()){
+                                break
+                            } 
+                        }
+                        console.log(p)
+                        if (p <= 8){
+                            toggle('one');
+                            $("#one").removeClass("fa-arrow-down").addClass("fa-arrow-up")
+                            $("#collapseOne").addClass('show');
+                            $("#collapseTwo").removeClass('show');
+                            $("#collapseThree").removeClass('show');
+                            $("#collapseFour").removeClass('show');                        
+                        }
+                        if (p == 9){
+                            toggle('two');
+                            $("#two").removeClass("fa-arrow-down").addClass("fa-arrow-up")
+                            $("#collapseTwo").addClass('show');
+                            $("#collapseOne").removeClass('show');
+                            $("#collapseThree").removeClass('show');
+                            $("#collapseFour").removeClass('show');   
+                        }
+                        if (p == 10){
+                            toggle('three');
+                            $("#two").removeClass("fa-arrow-down").addClass("fa-arrow-up")
+                            $("#collapseThree").addClass('show');                            
+                            $("#collapseOne").removeClass('show');
+                            $("#collapseTwo").removeClass('show');
+                            $("#collapseFour").removeClass('show');  
+                        }
+                        $("#menu2").show();
+                        $("#menu3").hide();
+                        $("#menu").hide();
+                    }
+                    else {
+                        $("#menu2").hide();
+                        $("#menu").show();
+                        $("#menu3").hide();
+                    }
+                });
+            })
+        </script>
     </body>
 </html>
