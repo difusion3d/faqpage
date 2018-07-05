@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>FAQ Sheet</title>
-        <author class = "author">Nick Kreissler</author>
+        <author style = "display:none">Nick Kreissler</author>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">        
@@ -20,7 +20,7 @@
                 color:#ECECEC;
             }
             .firstdiv {
-                margin-top:20px;
+                
                 text-align:center;
             }
             .seconddiv {
@@ -77,11 +77,11 @@
             <img  src="preloader.gif" style="position:absolute; top:50%; height:100px; margin-top:-150px;margin-left:-33px;left:50%"/>
         </div>
         <div style="margin-bottom:100px;">
-            <div  class = "firstdiv container-fluid row">
-                <div id = "menu2" class = "seconddiv col-xl-4">
+            <div class = "firstdiv row">
+                <div style = "padding-right:2px;" id = "menu2" class = "seconddiv col-xl-4">
                     <div class="accordion" id="accordionExample">
                         <div class="card">
-                            <div  class="card-header" id="headingOne">
+                            <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button onclick = "toggle('one')" class="button btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Mode d'emploi - Vidéo <i id = "one" class = "fa fa-arrow-up"></i>
@@ -154,9 +154,9 @@
                         </div>
                     </div>             
                 </div>
-                <div style = "margin-top:10px;margin-bottom:30px;"class = "col-xl-8">
-                    <nav style = "background-color:black;" class="navbar navbar-custom bg-custom">
-                        <a class="navbar-brand" href="#"><p style = "margin-top:10px;font-size:15px;color:white;">FAQS. Help Resources Center</p>
+                <div style = "padding-left:2px;margin-top:0px;margin-bottom:30px;"class = "col-xl-8">
+                    <nav style = "margin-top:0px;background-color:black;" class="navbar navbar-custom bg-custom">
+                        <a class="navbar-brand" href="#"><p style = "padding-left:15px;margin-top:10px;font-size:15px;color:white;">FAQS. Help Resources Center</p>
                         </a>
                         <div id = "menu" class = "fifthdiv">
                             <div style = "margin-top:10px;margin-bottom:10px;color:white;margin-left:10px;float:right;"  class = "fa fa-2x fa-bars"></div>
@@ -165,7 +165,7 @@
                             <div  style = "margin-top:10px;margin-bottom:10px;margin-left:10px;float:right;color:white;" class = "fa fa-2x fa-bars"></div>
                         </div>
                     </nav>
-                    <div style = "padding:5vh;" class = "container-fluid fourthdiv">
+                    <div style = "padding:5vh;" class = " fourthdiv">
                         <div id = "info"><iframe  src='https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4' frameborder='0' allow='autoplay; encrypted-media'></iframe></div>
                     </div>
                 </div>
@@ -177,7 +177,6 @@
                 <div class = "row">
                     <div style = "padding:10px;margin:10px;border:0px;background-color:black;max-width:150px;min-width:150px;min-height:50px;float:right;text-align:center;border-radius:5px;" class = "col-3"><p style = "font-size:12px;margin-top:9px;margin-bottom:7px;color:white;">Report an Issue</p></div>
                     <div style = "padding:10px;margin:10px;border:0px;background-color:black;max-width:150px;min-width:150px;min-height:50px;float:right;text-align:center;border-radius:5px;" class = "col-3"><p style = "font-size:12px;margin-top:9px;margin-bottom:7px;color:white;">Report a problem</p></div>
-                    
                 </div>
             </div>
         </footer>
