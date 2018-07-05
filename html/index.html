@@ -2,27 +2,31 @@
     <head>
         <title>FAQ Sheet</title>
         <author class = "author">Nick Kreissler</author>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>​
+        
             p {
                 color:black;
-                background-color:black;
-                font-size:12px;
+                font-size:10px;
             }
             p {
                 color:black;
-                font-size:12px;
+                font-size:10px;
             }
             body {
                 color:#ECECEC;
             }
             .firstdiv {
-                margin-top:30px;
+                margin-top:20px;
                 text-align:center;
             }
             .seconddiv {
                 margin:0px;
+                height:70%;
+                overflow-y: scroll;
             }
 
             .thirddiv {
@@ -46,16 +50,16 @@
             .sixthdiv {
                 display:none;
             }
-            
-            @media only screen and (max-width: 1500px) {
-                h3 {
-                    font-size:20px;
-                }
-                p {
-                    font-size: 10px;
-                }
+            .button {
+                font-size:14px;
+                color:black;
+            }
+            @media only screen and (max-width: 1210px) {
+                
                 .seconddiv {
                     display: none;
+                    height:40%;
+                    overflow-y:scroll;
                 }
                 .fifthdiv {
                     display:inline;
@@ -64,23 +68,23 @@
         </style>
     </head>
     <body style = "background-color: #ECECEC">
-        <div id="ajaxloader" style="text-align:center;background-color: white;height:100%;position:relative">
+        <div id="ajaxloader" style="display:none;text-align:center;background-color: white;height:100%;position:relative">
             <img  src="preloader.gif" style="position:absolute; top:50%; height:100px; margin-top:-150px;margin-left:-33px;left:50%"/>
         </div>
         <h3 style = "margin-left:20px;color:black;">FAQS. Help Resources Center</h3>
-        <div style = "height:100%;">
-            <div class = "firstdiv container-fluid row">
+        <div style="margin-bottom:100px;">
+            <div  class = "firstdiv container-fluid row">
                 <div id = "menu2" class = "seconddiv col-xl-4">
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div  class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button style = "color:black;" onclick = "toggle('one')" class=" btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button onclick = "toggle('one')" class="button btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Mode d'emploi - Vidéo <i id = "one" class = "fa fa-arrow-up"></i>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordiosnExample">
                                 <div class="card-body">
                                     <div class = "thirddiv" onclick = "togglec('uno')" >
                                         <div id = "uno"style = "background-color:#65bb69;width:100%;"class = "btn"><p style="color:white;margin-bottom:0px;float:left;">1. Creer Un Compte</p></div>
@@ -115,15 +119,15 @@
                         <div class="card">
                             <div  class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
-                                    <button style = "color:black;" onclick = "toggle('two')" class=" btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Mode d'emploi - PDF <i id = "two" class = "fa fa-arrow-down"></i>
+                                    <button  onclick = "toggle('two')" class="button btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Mode d'emploi - PDF <i id = "two" class = "fa fa-arrow-up"></i>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionsExample">
                                 <div class="card-body">
                                     <div class = "thirddiv"onclick = "togglec('ten')" >
-                                        <div id = "ten"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Télécharger le mode d'emploi Espace langues en PDF</p></div>
+                                        <div id = "ten"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Télécharger le mode d'emploi Espace...</p></div>
                                     </div>
                                 </div>
                             </div>
@@ -131,12 +135,12 @@
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
-                                    <button style = "color:black;" onclick = "toggle('three')" class=" btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    D'autres doutes ? <i id = "three" class = "fa fa-arrow-down"></i>
+                                    <button  onclick = "toggle('three')" class="button btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    D'autres doutes ? <i id = "three" class = "fa fa-arrow-up"></i>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class = "thirddiv"onclick = "togglec('nineteen')" >
                                         <div id = "nineteen"style = "width:100%;"class = "btn"><p style="margin-bottom:0px;float:left;">1. Contacter le KNE</p></div>
@@ -153,18 +157,19 @@
                     <div id = "menu3"class = "sixthdiv">
                         <div  style = "margin-top:10px;margin-bottom:10px;margin-left:10px;float:left;color:black;" class = "fa fa-2x fa-bars"></div>
                     </div>
-                    <div style = "padding:5vh;" class = "container-fluid fourthdiv card">
-                        <div id = "info"><iframe width='100%' height='60%'src='https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4' frameborder='0' allow='autoplay; encrypted-media'></iframe></div>
+                    <div style = "padding:5vh;" class = "container-fluid fourthdiv">
+                        <div id = "info"><iframe  src='https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4' frameborder='0' allow='autoplay; encrypted-media'></iframe></div>
                     </div>
                 </div>
             </div>
         </div>
        
-        <footer id = "footer" class = "card-footer" style = "margin-top:10px;display:none;background-color:#65bb69;width:100%;min-height:60px;bottom:0px;position:fixed;">
+        <footer id = "footer" class = "card-footer" style = "background-color:#65bb69;width:100%;min-height:60px;bottom:0px;position:fixed">
             <div>
                 <div class = "row">
-                    <div style = "padding:10px;margin:10px;border:0px;background-color:black;max-width:200px;min-width:200px;min-height:50px;float:right;text-align:center;border-radius:5px;" class = "col-3"><p style = "font-size:12px;margin-top:7px;margin-bottom:7px;color:white;">Report a technical problem</p></div>
-                    <div style = "padding:10px;margin:10px;border:0px;background-color:black;max-width:200px;min-width:200px;min-height:50px;float:right;text-align:center;border-radius:5px;" class = "col-3"><p style = "font-size:12px;margin-top:7px;margin-bottom:7px;color:white;">Report a technical problem</p></div>
+                    <div style = "padding:10px;margin:10px;border:0px;background-color:black;max-width:150px;min-width:150px;min-height:50px;float:right;text-align:center;border-radius:5px;" class = "col-3"><p style = "font-size:12px;margin-top:9px;margin-bottom:7px;color:white;">Report an Issue</p></div>
+                    <div style = "padding:10px;margin:10px;border:0px;background-color:black;max-width:150px;min-width:150px;min-height:50px;float:right;text-align:center;border-radius:5px;" class = "col-3"><p style = "font-size:12px;margin-top:9px;margin-bottom:7px;color:white;">Report a problem</p></div>
+                    
                 </div>
             </div>
         </footer>
@@ -177,23 +182,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script>
-            window.onload=function() {
-                $("#ajaxloader").remove();
-                $("#footer").show();
+            //window.onload=function() {
+             //   $("#ajaxloader").remove();
+             //   $("#footer").show();
                 
                 
-            };
+           // };
             var content = [
-                '<iframe width="100%" height="60%" src="https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/QmUabjqlYH8" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/KZqKufsGEpQ" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/cWsbcg5J-2k" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/qy0cdB7hu6Q" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/1r6eess3bFk" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/yzXDXZhzWic" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/ct8awQ-C8uI" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<iframe width="100%" height="60%"src="https://www.youtube.com/embed/yoW5GPYmp0U" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
-                '<div style = "margin-left:0px;"><iframe style = "border:0px;" width = "100%" height = "65%" src="faq.html"></iframe></div>',
+                '<iframe src="https://www.youtube.com/embed/videoseries?list=PLu6bZF5fHBVOPGZ7iwKK-HRkf58-s7IU4" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><p>hello</p><br><iframe  src="https://www.youtube.com/embed/QmUabjqlYH8" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe  src="https://www.youtube.com/embed/KZqKufsGEpQ" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe src="https://www.youtube.com/embed/cWsbcg5J-2k" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe src="https://www.youtube.com/embed/qy0cdB7hu6Q" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe src="https://www.youtube.com/embed/1r6eess3bFk" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe src="https://www.youtube.com/embed/yzXDXZhzWic" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe src="https://www.youtube.com/embed/ct8awQ-C8uI" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<iframe  src="https://www.youtube.com/embed/yoW5GPYmp0U" frameborder="0" allow="autoplay; encrypted-media"></iframe>',
+                '<div style = "margin-left:0px;"><iframe style = "border:0px;" width = "100%"  src="faq.html"></iframe></div>',
                 '<div><a href = "https://www.kiosque-edu.com/">Kiosque Numérique de lÉducation</a></div>'
             ];
             function toggle(x) {
@@ -262,7 +267,7 @@
                     $(this).children().children().toggleClass("hover1");
                 })
                 $("#menu").click(function(){
-                    $("#collapseOne").removeClass('show');
+                    //$("#collapseOne").removeClass('show');
                     $("#one").removeClass('fa-arrow-up').addClass("fa-arrow-down")
                     $("#menu2").slideDown();
                     $("#menu").attr("style","display:none;");
